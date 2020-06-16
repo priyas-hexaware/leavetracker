@@ -87,7 +87,7 @@ var final
 var searchHistory=[];
 var cardResponse=[];
 app.post("/fulfillment",function(request, response){
-    const task = request.body.queryResult.task.name;
+    const task = request.body.Triggeredtask
     logger.info("the request param", JSON.stringify(task));
     if(task == 'greeting'){
         var today = new Date(); 
