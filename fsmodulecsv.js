@@ -88,7 +88,7 @@ var searchHistory=[];
 var cardResponse=[];
 app.post("/fulfillment",function(request, response){
     const currenttask = request.body
-    logger.info("the request param", JSON.stringify(currenttask));
+    logger.info("the request param", currenttask);
     if(currenttask == 'greeting'){
         var today = new Date(); 
         var hours = today.getHours(); 
