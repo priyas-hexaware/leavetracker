@@ -89,29 +89,29 @@ var cardResponse=[];
 app.post("/fulfillment",function(request, response){
     const currenttask = request.body
     logger.info("the request param", JSON.stringify(currenttask));
-    if(currenttask == 'greeting'){
-        var today = new Date(); 
-        var hours = today.getHours(); 
-        var greeting = "";  
-        if(hours>=1 && hours<=12){
-            greeting = "Good Morning";
-        } else if(hours>=12 && hours<=16){
-            greeting = "Good Afternoon";
-        } else if(hours>=16 && hours<=21){
-            greeting = "Good Evening";
-        } else if(hours>=21 && hours<=24){
-            greeting = "Good Night";
-        }
+    //if(currenttask == 'greeting'){
+        //var today = new Date(); 
+       // var hours = today.getHours(); 
+       // var greeting = "";  
+       // if(hours>=1 && hours<=12){
+         //   greeting = "Good Morning";
+       // } else if(hours>=12 && hours<=16){
+           // greeting = "Good Afternoon";
+        //} else if(hours>=16 && hours<=21){
+           // greeting = "Good Evening";
+       // } else if(hours>=21 && hours<=24){
+            //greeting = "Good Night";
+       // }
     
-    var responseJson ={
+    //var responseJson ={
 
-    }
-    var txt_1 = "Alex!! What can I do for You"
-    var txt = greeting.concat(' '+txt_1);
-    responseJson.fulfillmentText= txt;
+    //}
+    //var txt_1 = "Alex!! What can I do for You"
+    //var txt = greeting.concat(' '+txt_1);
+    //responseJson.fulfillmentText= txt;
     
-    response.send(responseJson)
-}
+    //response.send(responseJson)
+//}
 //else if(intent == 'pincode validation')
  //{ 
     //logger.info( JSON.stringify((request.body)));
